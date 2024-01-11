@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'szabaduloszoba'`, () => {
+  it(`should have as title 'SzabaduloszobaKiralyPeter'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('szabaduloszoba');
+    expect(app.title).toEqual('SzabaduloszobaKiralyPeter');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('szabaduloszoba app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('SzabaduloszobaKiralyPeter app is running!');
   });
 });
